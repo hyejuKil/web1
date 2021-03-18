@@ -1,0 +1,46 @@
+/*can i use : 기술들 중 웹사이트들이 얼마나 기술 채택하고 있는지*/
+body{
+    margin: 0;
+}
+/*a는 inline element(tag) 자기 크기만큼만 사용*/
+a{
+    color:black;
+    text-decoration: none;
+}
+/*h1은 block level element(tag) 화면 전체 사용*/
+h1{
+    font-size: 45px;
+    text-align: center;
+    border-bottom:solid 1px gray ;
+    margin: 0px;
+    padding: 10px;
+}
+#grid{
+    display: grid;
+    grid-template-columns: 220px 1fr;
+}
+#grid ol{
+    border-right:solid 1px gray;
+    width: 160px;
+    margin: 0;
+    padding: 10px;
+    padding-left: 32px;
+
+}
+
+@media(max-width: 800px)
+{
+    h1{
+        font-size: 20px;
+        border:none;
+    }
+
+    #grid ol{
+        border:none;
+    }
+
+    #grid
+    {
+        display: block;
+    }
+}
